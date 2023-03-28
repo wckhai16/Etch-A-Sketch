@@ -5,20 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="app.js" def></script>
   <title>🤖 Etch-A-Sketch</title>
 </head>
 <body>
   <div class="main-container">
     <h1 id="header">Etch-A-Sketch</h1>
-    <div class="grid-container"></div>
+    <div id="grid-container"></div>
     <div class="tools-container">
       <div class="color-well">
         <input type="color" id="color-picker" value="#000000">
       </div>
       <div class="slider-container">
-        <label for="grid-slider">testing 1 2 3</label>
-        <input type="range" name="grid-slider" id="grid-slider" min="0" max="10">
+        <label for="grid-slider">16 x 16</label>
+        <input type="range" name="grid-slider" id="grid-slider" min="1" max="64" value="16">
       </div>
     </div>
     <button type="reset">Clear</button>
@@ -26,5 +25,6 @@
   <footer class="footer-container">
     <p>Copyright by Jaster</p>
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>
